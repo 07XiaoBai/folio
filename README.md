@@ -1,4 +1,4 @@
-# Desiree (Des) Pradilla — Portfolio
+# Des Pradilla — Portfolio
 
 Static personal portfolio (plain HTML / CSS / JS, no build step) published with GitHub Pages at
 https://07xiaobai.github.io/folio/
