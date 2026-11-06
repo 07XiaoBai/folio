@@ -3,20 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#F6F4EF" />
-  <meta name="description" content="Des Pradilla — personal portfolio. Digital marketing for leisure, attractions, and outdoor ecommerce — including GC Aqua Park since 2020, Gold Coast Wake Park, and Shopify store experience." />
-  <title>Des Pradilla — Portfolio</title>
+  <meta name="theme-color" content="#3F8CCB" />
+  <title>Desiree (Des) Pradilla — Digital marketing for tourism &amp; leisure attractions</title>
+  <meta name="description" content="Desiree (Des) Pradilla — digital marketing manager in Cebu, Philippines. Paid social, email and ecommerce campaigns for tourism and leisure attractions, plus Shopify store management for outdoor and lifestyle brands." />
+  <meta name="author" content="Desiree Pradilla" />
+  <link rel="canonical" href="https://07xiaobai.github.io/folio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Desiree (Des) Pradilla — Digital marketing for tourism &amp; leisure attractions" />
+  <meta property="og:description" content="Paid social, email and ecommerce campaigns for tourism and leisure attractions — strategy, audience, creative and results." />
+  <meta property="og:url" content="https://07xiaobai.github.io/folio/" />
+  <meta property="og:image" content="https://07xiaobai.github.io/folio/images/des-about.jpg" />
+  <meta property="og:image:width" content="900" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="Desiree Pradilla seated outdoors in warm evening light" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" id="top">
     <div class="header-inner">
-      <a class="logo" href="#top" aria-label="Des Pradilla home">Des Pradilla</a>
+      <a class="logo" href="#top" aria-label="Des Pradilla, back to top">
+        <img class="logo-face" src="favicon-32.png" alt="" width="32" height="32" />
+        <span>Des Pradilla</span>
+      </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
         <span class="nav-toggle-bar" aria-hidden="true"></span>
         <span class="nav-toggle-bar" aria-hidden="true"></span>
@@ -34,112 +53,109 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-grid">
+    <!-- HERO: sky -->
+    <section class="hero painted" aria-labelledby="hero-heading">
+      <div class="sky-deco" aria-hidden="true">
+        <img class="deco paint-sun" src="images/paint-sun.png" alt="" width="380" height="380">
+        <img class="deco paint-cloud c-hero-a" src="images/paint-cloud-a.png" alt="" width="700" height="400">
+        <img class="deco paint-cloud c-hero-b" src="images/paint-cloud-b.png" alt="" width="700" height="400">
+        <img class="deco paint-cloud c-hero-c" src="images/paint-cloud-c.png" alt="" width="700" height="400">
+      </div>
+
+      <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Personal portfolio</p>
+          <p class="hero-kicker">Digital marketing manager · Cebu, Philippines</p>
           <h1 id="hero-heading">
-            <span class="hero-name">Des Pradilla</span>
+            <span class="hero-hi">Hi, I’m</span>
+            <span class="hero-name">Des Pradilla.</span>
           </h1>
           <p class="hero-lede">
-            Cross-channel digital marketing for leisure, attractions, and outdoor ecommerce —
-            campaign strategy, paid media, CRM, Shopify store management, and funnel coordination.
-            Work with <strong>GC Aqua Park</strong> since <strong>2020</strong>, plus
-            <strong>Gold Coast Wake Park</strong> and multi-brand Shopify experience.
+            I plan and run paid social, email and ecommerce campaigns for
+            <strong>tourism &amp; leisure attractions</strong> and outdoor ecommerce —
+            from the offer and audience through to the creative and the results.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#work">View selected work</a>
-            <a class="btn btn-ghost" href="#experience">Experience</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            <a class="btn btn-sun" href="#work">Explore the work map</a>
+            <a class="btn btn-glass" href="#contact">Get in touch</a>
           </div>
         </div>
-        <aside class="hero-aside" aria-label="Highlights">
-          <div class="stat-card">
-            <span class="stat-label">Attractions</span>
-            <span class="stat-value">GC Aqua Park</span>
-            <span class="stat-note">Since 2020</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">Also</span>
-            <span class="stat-value">Gold Coast Wake Park</span>
-            <span class="stat-note">Paid · email · site · programs</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">Ecommerce</span>
-            <span class="stat-value">Shopify stores</span>
-            <span class="stat-note">2019 – Dec 2024</span>
-          </div>
-        </aside>
+
+        <figure class="hero-photo">
+          <img src="images/des-about.jpg" alt="Desiree Pradilla seated outdoors on a timber bench in warm late-afternoon light" width="900" height="900" fetchpriority="high" />
+          <figcaption class="photo-sticker"><span aria-hidden="true">☀</span> Based in Cebu, PH</figcaption>
+        </figure>
       </div>
+
+      <ul class="hero-cards" aria-label="Highlights">
+        <li class="glass-card">
+          <span class="glass-num" aria-hidden="true">1</span>
+          <span class="glass-label">Tourism &amp; leisure attractions</span>
+          <span class="glass-note">Since 2020 · paid social, email, CRM</span>
+        </li>
+        <li class="glass-card">
+          <span class="glass-num" aria-hidden="true">2</span>
+          <span class="glass-label">Wake &amp; water attractions</span>
+          <span class="glass-note">Paid · email · site · programs</span>
+        </li>
+        <li class="glass-card">
+          <span class="glass-num" aria-hidden="true">3</span>
+          <span class="glass-label">Shopify ecommerce</span>
+          <span class="glass-note">Outdoor &amp; lifestyle brands · 2019 – Dec 2024</span>
+        </li>
+      </ul>
+
     </section>
 
-    <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-heading">
+    <!-- CAPABILITIES -->
+    <section class="section painted" id="capabilities" aria-labelledby="capabilities-heading">
+      <div class="sky-deco" aria-hidden="true">
+        <img class="deco paint-cloud c-cap-a" src="images/paint-cloud-b.png" alt="" width="700" height="400">
+        <img class="deco paint-cloud c-cap-b" src="images/paint-cloud-c.png" alt="" width="700" height="400">
+      </div>
       <div class="section-inner">
-        <header class="section-head">
+        <header class="section-head center">
           <p class="eyebrow">Capabilities</p>
           <h2 id="capabilities-heading">What I deliver</h2>
           <p class="section-intro">
-            Paid media, email, organic social, Shopify store management, and booking / ecommerce funnels —
-            plus strategy, reporting, and creative direction across leisure, attractions, and outdoor brands.
+            Paid media, email, organic social, Shopify store management and booking / ecommerce funnels —
+            plus strategy, reporting and creative direction for tourism &amp; leisure attractions and outdoor brands.
           </p>
         </header>
         <ul class="capability-grid">
-          <li>
-            <h3>Meta / Facebook Ads</h3>
-            <p>Paid sales, retargeting, lead &amp; giveaway flights, and creative role testing.</p>
-          </li>
-          <li>
-            <h3>TikTok Ads</h3>
-            <p>Acquisition and urgency creative for holiday and gift-card sale windows.</p>
-          </li>
-          <li>
-            <h3>Google Ads</h3>
-            <p>Search, Performance Max, and brand defence covered in year-end reporting.</p>
-          </li>
-          <li>
-            <h3>Klaviyo email</h3>
-            <p>Deadline sequences, early-access nurture, and CRM-driven pass / sale monetisation.</p>
-          </li>
-          <li>
-            <h3>Organic social</h3>
-            <p>Facebook &amp; Instagram calendars and Stories packs timed to school holidays.</p>
-          </li>
-          <li>
-            <h3>Campaign strategy &amp; reporting</h3>
-            <p>Briefs, SWOT, YoY analysis, and commercial attribution discipline (ROLLER vs platform).</p>
-          </li>
-          <li>
-            <h3>Creative direction</h3>
-            <p>Canva asset packs for major sales — acquisition, how-it-works, and closing roles.</p>
-          </li>
-          <li>
-            <h3>Website &amp; funnel coordination</h3>
-            <p>Landing-page QA, tracking notes, and booking-path coordination.</p>
-          </li>
-          <li>
-            <h3>Shopify store management</h3>
-            <p>Catalogue, promotions, apps/integrations, and day-to-day store ops across outdoor and lifestyle brands.</p>
-          </li>
+          <li><h3>Meta / Facebook Ads</h3><p>Paid sales, retargeting, lead &amp; giveaway flights, and creative role testing.</p></li>
+          <li><h3>TikTok Ads</h3><p>Acquisition and urgency creative for holiday and gift-card sale windows.</p></li>
+          <li><h3>Google Ads</h3><p>Search, Performance Max, and brand defence covered in year-end reporting.</p></li>
+          <li><h3>Klaviyo email</h3><p>Deadline sequences, early-access nurture, and CRM-driven pass / sale monetisation.</p></li>
+          <li><h3>Organic social</h3><p>Facebook &amp; Instagram calendars and Stories packs timed to school holidays.</p></li>
+          <li><h3>Campaign strategy &amp; reporting</h3><p>Briefs, SWOT, YoY analysis, and commercial attribution discipline (ticketing-system cash vs platform-attributed).</p></li>
+          <li><h3>Creative direction</h3><p>Canva asset packs for major sales — acquisition, how-it-works, and closing roles.</p></li>
+          <li><h3>Website &amp; funnel coordination</h3><p>Landing-page QA, tracking notes, and booking-path coordination.</p></li>
+          <li><h3>Shopify store management</h3><p>Catalogue, promotions, apps/integrations, and day-to-day store ops across outdoor and lifestyle brands.</p></li>
         </ul>
       </div>
     </section>
 
-
-    <section class="section experience" id="experience" aria-labelledby="experience-heading">
+    <!-- EXPERIENCE: cream -->
+    <section class="section painted" id="experience" aria-labelledby="experience-heading">
+      <div class="sky-deco" aria-hidden="true">
+        <img class="deco paint-cloud c-exp-a" src="images/paint-cloud-a.png" alt="" width="700" height="400">
+        <img class="deco paint-cloud c-exp-b" src="images/paint-cloud-c.png" alt="" width="700" height="400">
+      </div>
       <div class="section-inner">
         <header class="section-head">
           <p class="eyebrow">Experience</p>
-          <h2 id="experience-heading">Shopify and Gold Coast Wake Park</h2>
+          <h2 id="experience-heading">Ecommerce and leisure attractions</h2>
           <p class="section-intro">
             Shopify store management from <strong>2019 through December 2024</strong>,
-            plus marketing work for Gold Coast Wake Park.
+            and cross-channel marketing for tourism &amp; leisure attractions since <strong>2020</strong> —
+            including a wake and water-sports attraction.
           </p>
         </header>
 
         <div class="experience-grid">
-          <article class="exp-card" id="exp-shopify">
+          <article class="exp-card tilt-left" id="exp-shopify">
             <div class="case-meta">
-              <span class="case-tag">Ecommerce</span>
+              <span class="case-tag tag-butter">Ecommerce</span>
               <span>2019 – Dec 2024</span>
             </div>
             <h3>Shopify store management</h3>
@@ -158,48 +174,76 @@
             <p class="channels"><span>Platform:</span> Shopify</p>
           </article>
 
-          <article class="exp-card" id="exp-gcwp">
+          <article class="exp-card tilt-right" id="exp-wake">
             <div class="case-meta">
-              <span class="case-tag">Attractions</span>
-              <span>Alongside GC Aqua Park</span>
+              <span class="case-tag tag-sky">Leisure &amp; attractions</span>
+              <span>Wake &amp; water attraction</span>
             </div>
-            <h3>Gold Coast Wake Park</h3>
+            <h3>Wake &amp; water-sports attraction</h3>
             <p class="case-summary">
-              Cross-channel marketing for Gold Coast Wake Park alongside GC Aqua Park —
-              Meta ads, email, organic social, website updates, and program marketing.
+              Cross-channel marketing for a wake and water-sports attraction, alongside my wider
+              tourism &amp; leisure attraction work — Meta ads, email, organic social, website updates,
+              and program marketing.
             </p>
             <p class="case-role"><strong>Programs and campaigns include:</strong>
               Ladies Challenge, Boarding School, Progression Sessions, school-holiday giveaways,
               Points Chase, Inclusion sessions, Afterpay gift-card sale, Get Up and Gold Coast,
-              TEQ campaign windows, and park-side ProWake Cup / demo-day support.</p>
+              TEQ campaign windows, and on-site ProWake Cup / demo-day support.</p>
             <p class="channels"><span>Channels:</span> Meta · Email / Klaviyo · Organic social · Website · Google Ads (setup)</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section work" id="work" aria-labelledby="work-heading">
+    <!-- WORK MAP: warm sand -->
+    <section class="section painted map-section" id="work" aria-labelledby="work-heading">
+      <div class="sky-deco" aria-hidden="true">
+        <img class="deco paint-cloud c-work-a" src="images/paint-cloud-c.png" alt="" width="700" height="400">
+        <img class="deco paint-cloud c-work-b" src="images/paint-cloud-b.png" alt="" width="700" height="400">
+      </div>
       <div class="section-inner">
         <header class="section-head">
-          <p class="eyebrow">Selected work</p>
+          <p class="eyebrow">Selected work · Tourism &amp; leisure attractions</p>
           <h2 id="work-heading">Client case studies</h2>
           <p class="section-intro">
-            Detailed campaign results from client work in leisure and attractions —
-            with the strategy, audience, and creatives behind each outcome, not numbers alone.
-            Commercial outcomes use <strong>ROLLER “Funds Received”</strong> (and quantity sold)
-            from 2025 year-end reporting. Platform ROAS and email order value are
-            <em>channel-attributed</em> — they are not the same as ROLLER cash and are not summed together.
+            2025 campaigns (plus a 2026 website &amp; booking-funnel project) for a tourism &amp; leisure attraction in Queensland, Australia —
+            with the strategy, audience and creatives behind each outcome, not numbers alone.
+            <strong>Tap any bubble</strong> to open the full case.
+          </p>
+          <p class="section-note">
+            Commercial outcomes use the attraction’s ticketing-system (ROLLER) <strong>“Funds Received”</strong> and quantity sold
+            from 2025 year-end reporting. Platform ROAS and email order value are <em>channel-attributed</em> —
+            they are not the same as ticketing cash and are not summed together.
           </p>
         </header>
 
-        <div class="case-list">
+        <div class="mind-map" data-map aria-label="Client case studies map">
+          <svg class="map-lines" aria-hidden="true" focusable="false"></svg>
+          <div class="map-hub" data-hub>
+            <span class="hub-kicker">Tourism &amp; leisure</span>
+            <span class="hub-title">Campaign map</span>
+          </div>
+          <ul class="map-nodes" role="list">
+            <li style="--x:50%;--y:9%"><button type="button" class="map-node n-yellow" data-case="case-summer-pass" aria-haspopup="dialog"><span class="node-tag">Product launch · Aug</span><span class="node-title">Summer Pass 2025</span><span class="node-metric">A$182.5K funds · 2,275 passes</span></button></li>
+            <li style="--x:82%;--y:21%"><button type="button" class="map-node n-coral" data-case="case-bfcm" aria-haspopup="dialog"><span class="node-tag">Sale event · Nov</span><span class="node-title">BFCM 2025</span><span class="node-metric">A$94.8K funds · +53.77% YoY</span></button></li>
+            <li style="--x:87%;--y:54%"><button type="button" class="map-node n-peach" data-case="case-kings-birthday" aria-haspopup="dialog"><span class="node-tag">Mid-season · Oct</span><span class="node-title">King’s Birthday Sale</span><span class="node-metric">A$32.1K funds · 6.75 blended ROAS</span></button></li>
+            <li style="--x:76%;--y:86%"><button type="button" class="map-node n-blue" data-case="case-easter" aria-haspopup="dialog"><span class="node-tag">Autumn holidays · Apr</span><span class="node-title">Easter Sale 2025</span><span class="node-metric">13.35 blended ROAS</span></button></li>
+            <li style="--x:50%;--y:93%"><button type="button" class="map-node n-cream" data-case="case-website" aria-haspopup="dialog"><span class="node-tag">Process · 2026</span><span class="node-title">Website &amp; booking funnel</span><span class="node-metric">68 responsive · 102 HTTP checks</span></button></li>
+            <li style="--x:24%;--y:86%"><button type="button" class="map-node n-pink" data-case="case-giveaways" aria-haspopup="dialog"><span class="node-tag">Top-of-funnel</span><span class="node-title">School-holiday giveaways</span><span class="node-metric">9,290 leads · A$0.05 CPL</span></button></li>
+            <li style="--x:13%;--y:54%"><button type="button" class="map-node n-yellow" data-case="case-oz-day" aria-haspopup="dialog"><span class="node-tag">National holiday · Jan</span><span class="node-title">Oz Day 2025</span><span class="node-metric">A$20.2K funds · 9.28 blended ROAS</span></button></li>
+            <li style="--x:18%;--y:21%"><button type="button" class="map-node n-peach" data-case="case-boxing-day" aria-haspopup="dialog"><span class="node-tag">Holiday sale · Dec</span><span class="node-title">Boxing Day Sale 2025</span><span class="node-metric">A$58K funds · +432.96% YoY</span></button></li>
+          </ul>
+        </div>
+
+        <div class="case-library" id="case-library">
           <!-- Boxing Day -->
-          <article class="case-card case-featured" id="case-boxing-day">
+          <article class="case-card" id="case-boxing-day">
             <div class="case-meta">
               <span class="case-tag">Holiday sale</span>
               <time datetime="2025-12">26–27 Dec 2025</time>
             </div>
-            <h3>Boxing Day Sale 2025</h3>
+            <p class="case-client">Client: tourism &amp; leisure attraction (Queensland, Australia)</p>
+            <h3 id="case-boxing-day-title">Boxing Day Sale 2025</h3>
             <p class="case-summary">
               Holiday-aligned omni-channel gift-card surge during summer school holidays —
               Meta, TikTok, and email, with BFCM creatives repurposed for the Boxing Day window.
@@ -215,7 +259,7 @@
               </dl>
               <div class="creative-gallery" role="group" aria-label="Campaign creatives">
                 <figure>
-                  <img src="images/boxing-day-family.jpg" alt="Boxing Day Sale 2025 static — family aqua park photo with 20% off gift cards" loading="lazy" width="900" height="1125" />
+                  <img src="images/boxing-day-family.jpg" alt="Boxing Day Sale 2025 static — family day-out photo with 20% off gift cards" loading="lazy" width="900" height="1125" />
                   <figcaption>Boxing Day static — family lifestyle + 20% off gift cards</figcaption>
                 </figure>
                 <figure>
@@ -258,12 +302,13 @@
           </article>
 
           <!-- Summer Pass -->
-          <article class="case-card case-featured" id="case-summer-pass">
+          <article class="case-card" id="case-summer-pass">
             <div class="case-meta">
               <span class="case-tag">Product launch</span>
               <time datetime="2025-08">8–22 Aug 2025</time>
             </div>
-            <h3>Summer Pass 2025</h3>
+            <p class="case-client">Client: tourism &amp; leisure attraction (Queensland, Australia)</p>
+            <h3 id="case-summer-pass-title">Summer Pass 2025</h3>
             <p class="case-summary">
               Seasonal pass launch ($79 vs $199) with email as a primary revenue driver alongside
               Meta and TikTok. Largest single product-launch Funds Received figure in this 2025 campaign set.
@@ -318,12 +363,13 @@
           </article>
 
           <!-- BFCM -->
-          <article class="case-card case-featured" id="case-bfcm">
+          <article class="case-card" id="case-bfcm">
             <div class="case-meta">
               <span class="case-tag">Gift-card / sale event</span>
               <time datetime="2025-11">18 Nov – 2 Dec 2025</time>
             </div>
-            <h3>BFCM 2025</h3>
+            <p class="case-client">Client: tourism &amp; leisure attraction (Queensland, Australia)</p>
+            <h3 id="case-bfcm-title">BFCM 2025</h3>
             <p class="case-summary">
               Scaled Black Friday / Cyber Monday gift-card and sale event with early access (20 Nov)
               and main sale (28 Nov – 1 Dec). Omni-channel mix of Meta (dominant), TikTok, Klaviyo email,
@@ -384,7 +430,8 @@
               <span class="case-tag">Mid-season holiday</span>
               <time datetime="2025-10">5–6 Oct 2025</time>
             </div>
-            <h3>King's Birthday Sale 2025</h3>
+            <p class="case-client">Client: tourism &amp; leisure attraction (Queensland, Australia)</p>
+            <h3 id="case-kings-birthday-title">King's Birthday Sale 2025</h3>
             <p class="case-summary">
               Mid-season holiday capture aligned to QLD spring holidays, with a strong email contribution
               alongside Meta and TikTok paid.
@@ -443,7 +490,8 @@
               <span class="case-tag">National holiday</span>
               <time datetime="2025-01-26">26 Jan 2025</time>
             </div>
-            <h3>Oz Day 2025</h3>
+            <p class="case-client">Client: tourism &amp; leisure attraction (Queensland, Australia)</p>
+            <h3 id="case-oz-day-title">Oz Day 2025</h3>
             <p class="case-summary">
               Australia Day holiday sale amplified with Meta, TikTok, and email, plus a low-cost
               OzBargain community deal-site boost.
@@ -496,7 +544,8 @@
               <span class="case-tag">Autumn holidays</span>
               <time datetime="2025-04">16–20 Apr 2025</time>
             </div>
-            <h3>Easter Sale 2025</h3>
+            <p class="case-client">Client: tourism &amp; leisure attraction (Queensland, Australia)</p>
+            <h3 id="case-easter-title">Easter Sale 2025</h3>
             <p class="case-summary">
               Holiday sale under competitive seasonal pressure across Meta, TikTok, and email,
               supported by dedicated Easter creative packs.
@@ -543,7 +592,8 @@
               <span class="case-tag">Top-of-funnel</span>
               <time datetime="2025">2025 school-holiday windows</time>
             </div>
-            <h3>School-holiday lead &amp; giveaway engine 2025</h3>
+            <p class="case-client">Client: tourism &amp; leisure attraction (Queensland, Australia)</p>
+            <h3 id="case-giveaways-title">School-holiday lead &amp; giveaway engine 2025</h3>
             <p class="case-summary">
               Full-funnel list growth timed to QLD school holidays — Meta as the primary lead channel,
               TikTok for traffic, and email nurture afterward. Windows included an International campaign
@@ -592,7 +642,8 @@
               <span class="case-tag">Process / product</span>
               <time datetime="2026-10-21">Site redesign 21 Oct 2026</time>
             </div>
-            <h3>Website &amp; booking funnel modernisation 2026</h3>
+            <p class="case-client">Client: tourism &amp; leisure attraction (Queensland, Australia)</p>
+            <h3 id="case-website-title">Website &amp; booking funnel modernisation 2026</h3>
             <p class="case-summary">
               Coordinated marketing and website updates around the live site redesign
               (21 Oct 2026) and follow-up page fixes — including landing-page QA, tracking notes,
@@ -608,7 +659,7 @@
                 </div>
                 <div>
                   <dt>Audience / targeting</dt>
-                  <dd>Site visitors and booking-path users on gcaquapark.com.au — this wasn’t a paid-audience campaign.</dd>
+                  <dd>Site visitors and booking-path users on the attraction’s website — this wasn’t a paid-audience campaign.</dd>
                 </div>
                 <div>
                   <dt>Winning creative</dt>
@@ -618,142 +669,227 @@
               <p class="approach-note">Ledger notes 68 responsive checks and 102 HTTP checks; no certified Core Web Vitals or paid-transaction lift is claimed.</p>
             </div>
             <p class="channels"><span>Channels:</span> Website (WordPress) · Tracking coordination</p>
-          </article>
-        </div>
+          </article>        </div>
       </div>
     </section>
 
-
-    <section class="section other-cases" id="other-cases" aria-labelledby="other-cases-heading">
+    <!-- OTHER CASES MAP: peach -->
+    <section class="section painted map-section" id="other-cases" aria-labelledby="other-cases-heading">
+      <div class="sky-deco" aria-hidden="true">
+        <img class="deco paint-cloud c-oth-a" src="images/paint-cloud-a.png" alt="" width="700" height="400">
+        <img class="deco paint-cloud c-oth-b" src="images/paint-cloud-b.png" alt="" width="700" height="400">
+      </div>
       <div class="section-inner">
         <header class="section-head">
-          <p class="eyebrow">Also at Lab7 Digital</p>
+          <p class="eyebrow">Also at Lab7 Digital · By industry</p>
           <h2 id="other-cases-heading">Other cases</h2>
           <p class="section-intro">
-            Success stories published on <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a>.
-            I worked on these while at Lab7 Digital. Figures and wording below are as published by the agency
-            (they’re broader than the detailed leisure case studies above).
+            Success stories published on <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a>
+            that I worked on while at Lab7 Digital — across leisure &amp; attractions, tours, B2C ecommerce,
+            local services and tracking. Figures and wording are as published by the agency.
+            <strong>Tap a bubble</strong> to read the story.
           </p>
         </header>
 
-        <div class="other-grid">
-          <article class="other-card">
+        <div class="mind-map map-other" data-map aria-label="Other cases map">
+          <svg class="map-lines" aria-hidden="true" focusable="false"></svg>
+          <div class="map-hub hub-coral" data-hub>
+            <span class="hub-kicker">Lab7 Digital</span>
+            <span class="hub-title">Success stories</span>
+          </div>
+          <ul class="map-nodes" role="list">
+            <li style="--x:50%;--y:9%"><button type="button" class="map-node n-yellow" data-case="other-leisure" aria-haspopup="dialog"><span class="node-tag">Leisure &amp; attractions</span><span class="node-title">Facebook growth, off-peak</span><span class="node-metric">$280K sales lift · +111% memberships</span></button></li>
+            <li style="--x:83%;--y:23%"><button type="button" class="map-node n-blue" data-case="other-tours" aria-haspopup="dialog"><span class="node-tag">Tours &amp; activities</span><span class="node-title">Hydrofoil tours UGC</span><span class="node-metric">300x sales · 450+ new attendees</span></button></li>
+            <li style="--x:86%;--y:62%"><button type="button" class="map-node n-pink" data-case="other-zen" aria-haspopup="dialog"><span class="node-tag">Tracking &amp; Meta</span><span class="node-title">Post-iOS recovery</span><span class="node-metric">19X ROAS · $368K in 85 days</span></button></li>
+            <li style="--x:66%;--y:90%"><button type="button" class="map-node n-cream" data-case="other-com" aria-haspopup="dialog"><span class="node-tag">Local services</span><span class="node-title">Lead growth</span><span class="node-metric">4X phone inquiries</span></button></li>
+            <li style="--x:34%;--y:90%"><button type="button" class="map-node n-peach" data-case="other-prowake" aria-haspopup="dialog"><span class="node-tag">Outdoor &amp; watersports ecommerce</span><span class="node-title">Site, SEO &amp; Google Ads</span><span class="node-metric">12X ROAS in four months</span></button></li>
+            <li style="--x:14%;--y:62%"><button type="button" class="map-node n-yellow" data-case="other-ecom" aria-haspopup="dialog"><span class="node-tag">Ecommerce</span><span class="node-title">Store conversion lift</span><span class="node-metric">9x revenue · 961% more orders</span></button></li>
+            <li style="--x:17%;--y:23%"><button type="button" class="map-node n-blue" data-case="other-b2c" aria-haspopup="dialog"><span class="node-tag">B2C / ecommerce</span><span class="node-title">Wholesale → DTC</span><span class="node-metric">18X sales · +$570K B2C</span></button></li>
+          </ul>
+        </div>
+
+        <div class="case-library" id="other-library">
+          <article class="case-card other-card" id="other-leisure">
             <div class="case-meta"><span class="case-tag">Leisure / attractions</span><span>From 2020</span></div>
-            <h3>Daniel’s team — Facebook growth</h3>
+            <h3 id="other-leisure-title">Daniel’s team — Facebook growth</h3>
             <p>Facebook campaign that, within 60 days, tripled net profit from 80k to over $280k during off-peak season and increased community programs sold by 560%.</p>
             <p class="other-metric">Published highlights: $280K increase in sales during off-peak · 111% increase in annual memberships · 386% increase in customer list</p>
             <p>Approach published: lookalike from existing customers; email workflow and SMS around ticket sale dates; UGC strategy.</p>
             <p class="other-source">Source: <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a> success stories</p>
           </article>
 
-          <article class="other-card">
+          <article class="case-card other-card" id="other-tours">
             <div class="case-meta"><span class="case-tag">Tours</span><span>Gold Coast Hydrofoil Tours</span></div>
-            <h3>Gold Coast Hydrofoil Tours</h3>
+            <h3 id="other-tours-title">Gold Coast Hydrofoil Tours</h3>
             <p>UGC strategy that increased gift card sales by 200X in ten months and acquired 450+ new customers. Overall sales increased by 300X from a cold audience, plus an extra $141K from retargeting engaged audiences.</p>
             <p class="other-metric">Published highlights: 300x increase in sales · 450+ new attendees · 10 months</p>
             <p>Approach published: creative strategy; untapped audiences.</p>
             <p class="other-source">Source: <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a> success stories</p>
           </article>
 
-          <article class="other-card">
+          <article class="case-card other-card" id="other-b2c">
             <div class="case-meta"><span class="case-tag">B2C expansion</span><span>Bill</span></div>
-            <h3>Wholesale → direct-to-consumer</h3>
+            <h3 id="other-b2c-title">Wholesale → direct-to-consumer</h3>
             <p>Digital strategy that developed brand story and online presence for a wholesale seller moving into B2C — acquiring an additional $570K in B2C sales.</p>
             <p class="other-metric">Published highlights: 18X increase in sales · 65% increase in returning customers · 2 years successfully expanded B2C</p>
             <p>Approach published: cross/upsell with integrated software; SEO; abandon-cart SMS; brand building on social.</p>
             <p class="other-source">Source: <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a> success stories</p>
           </article>
 
-          <article class="other-card">
+          <article class="case-card other-card" id="other-ecom">
             <div class="case-meta"><span class="case-tag">Ecommerce</span><span>Chris</span></div>
-            <h3>Online store conversion lift</h3>
+            <h3 id="other-ecom-title">Online store conversion lift</h3>
             <p>Improvements that streamlined navigation and checkout, lifting conversion rates and delivering a 909% increase in revenue within the first two years of working together.</p>
             <p class="other-metric">Published highlights: 9x increase in revenue · 961% increase in total orders · 77% returning customers</p>
             <p>Approach published: SEO; social brand awareness; abandon-cart campaigns.</p>
             <p class="other-source">Source: <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a> success stories</p>
           </article>
 
-          <article class="other-card">
+          <article class="case-card other-card" id="other-prowake">
             <div class="case-meta"><span class="case-tag">Ecommerce / watersports</span><span>Prowake</span></div>
-            <h3>Prowake — site, SEO &amp; Google Ads</h3>
+            <h3 id="other-prowake-title">Prowake — site, SEO &amp; Google Ads</h3>
             <p>Website redesign, SEO improvements, and new Google ad campaigns after prior social ads underperformed with another agency — ranking at the top of pages for keywords and achieving ROAS of 12X in four months.</p>
             <p class="other-metric">Published highlights: 55% increase in average order value · 85% increase in sales · #1 ranking for local store</p>
             <p class="other-source">Source: <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a> success stories · also listed under my Shopify experience as ProWake</p>
           </article>
 
-          <article class="other-card">
+          <article class="case-card other-card" id="other-com">
             <div class="case-meta"><span class="case-tag">Local services</span><span>Centre of Movement</span></div>
-            <h3>Centre of Movement — lead growth</h3>
+            <h3 id="other-com-title">Centre of Movement — lead growth</h3>
             <p>Google &amp; Facebook lead-magnet work for Steve’s five-year expansion plan — increasing leads and phone calls by 4x. Lab7 helped reach the goal in two and a half years; the practice hired 3 new practitioners, reached full capacity, and built a waiting list.</p>
             <p class="other-metric">Published highlights: 2.5 years long-term goal achieved · 12X increase in organic traffic · 4X increase in phone inquiries</p>
             <p>Approach published: lead magnet and funnel; SEO; brand building on social.</p>
             <p class="other-source">Source: <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a> success stories</p>
           </article>
 
-          <article class="other-card">
+          <article class="case-card other-card" id="other-zen">
             <div class="case-meta"><span class="case-tag">Tracking / Meta</span><span>Zen Space</span></div>
-            <h3>Zen Space — post–iOS tracking recovery</h3>
+            <h3 id="other-zen-title">Zen Space — post–iOS tracking recovery</h3>
             <p>After iOS updates limited tracking and sales dropped, Lab7 set up Facebook Conversions API and a Meta ads strategy that generated $368,104.27 in sales in 85 days.</p>
             <p class="other-metric">Published highlights: 19X return on ad spend · 85 days · $368K three-month turnover</p>
             <p>Approach published: accurate tracking; CPR ceiling; lookalike from high-value clients; expanded personas / new audiences.</p>
             <p class="other-source">Source: <a href="https://www.lab7digital.com/" rel="noopener noreferrer">lab7digital.com</a> success stories</p>
-          </article>
-        </div>
+          </article>        </div>
       </div>
     </section>
 
-    <section class="section about" id="about" aria-labelledby="about-heading">
+    <!-- ABOUT: pale sky -->
+    <section class="section painted about" id="about" aria-labelledby="about-heading">
+      <div class="sky-deco" aria-hidden="true">
+        <img class="deco paint-cloud c-abt-a" src="images/paint-cloud-c.png" alt="" width="700" height="400">
+        <img class="deco paint-cloud c-abt-b" src="images/paint-cloud-a.png" alt="" width="700" height="400">
+      </div>
       <div class="section-inner about-grid">
-        <header class="section-head">
-          <p class="eyebrow">About</p>
-          <h2 id="about-heading">About me</h2>
-        </header>
+        <figure class="about-photo">
+          <img src="images/des-portrait-45.jpg" alt="Portrait of Desiree Pradilla outdoors among green trees" width="720" height="900" loading="lazy" />
+        </figure>
         <div class="about-body">
-          <p class="placeholder-line">[Your headline]</p>
-          <p class="placeholder-block">[Short bio — a few sentences on how you work, who you help, and what you care about in a campaign.]</p>
+          <p class="eyebrow">About me</p>
+          <h2 id="about-heading">Digital marketing for tourism and leisure attractions</h2>
+          <p class="about-bio">
+            I’m Desiree Pradilla, a digital marketing manager based in Cebu, Philippines. I plan and run paid social,
+            email, and ecommerce campaigns for tourism and leisure attractions — from the offer and audience through
+            to the creative and the results. From 2019 to 2024 I also managed Shopify stores for outdoor and lifestyle brands.
+          </p>
           <ul class="about-facts">
-            <li><span class="fact-label">Location</span> <span class="placeholder-inline">[Your location]</span></li>
-            <li><span class="fact-label">GC Aqua Park</span> Working with GCAP since 2020</li>
-            <li><span class="fact-label">Focus</span> Leisure, attractions &amp; outdoor ecommerce</li>
+            <li><span class="fact-label">Location</span> <span>Cebu, Philippines</span></li>
+            <li><span class="fact-label">Industry</span> <span>Tourism &amp; leisure attractions, since 2020</span></li>
+            <li><span class="fact-label">Focus</span> <span>Paid social, email &amp; ecommerce</span></li>
+            <li><span class="fact-label">LinkedIn</span> <a href="https://www.linkedin.com/in/desiree-grace-pradilla-b140b118b/" rel="noopener noreferrer" target="_blank">linkedin.com/in/desiree-grace-pradilla</a></li>
           </ul>
-          <p class="placeholder-note">Placeholder fields above — swap in your real details whenever you’re ready.</p>
         </div>
       </div>
     </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-heading">
-      <div class="section-inner contact-panel">
-        <header class="section-head">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-heading">Let’s talk</h2>
-          <p class="section-intro">
-            Open to conversations with potential clients and hiring teams. Details below are placeholders for now.
-          </p>
-        </header>
-        <ul class="contact-list">
-          <li>
-            <span class="contact-label">Email</span>
-            <span class="placeholder-inline">[Email]</span>
-          </li>
-          <li>
-            <span class="contact-label">LinkedIn</span>
-            <span class="placeholder-inline">[LinkedIn]</span>
-          </li>
-          <li>
-            <span class="contact-label">Location</span>
-            <span class="placeholder-inline">[Your location]</span>
-          </li>
-        </ul>
+    <!-- CONTACT -->
+    <section class="section painted contact" id="contact" aria-labelledby="contact-heading">
+      <div class="sky-deco" aria-hidden="true">
+        <img class="deco paint-cloud c-con-a" src="images/paint-cloud-b.png" alt="" width="700" height="400">
+        <img class="deco paint-cloud c-con-b" src="images/paint-cloud-a.png" alt="" width="700" height="400">
       </div>
+      <div class="section-inner contact-inner">
+        <header class="section-head center contact-head">
+          <p class="eyebrow on-sky">Contact</p>
+          <h2 id="contact-heading">Let’s talk</h2>
+          <p class="section-intro">Open to conversations with potential clients and hiring teams.</p>
+        </header>
+
+        <div class="contact-card">
+          <form class="contact-form" action="https://formsubmit.co/dtpradilla@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Portfolio enquiry from the website" />
+            <input type="hidden" name="_next" value="https://07xiaobai.github.io/folio/#contact" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="f-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-email" name="email" type="email" autocomplete="email" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-company">Company / role <span class="optional">(optional)</span></label>
+              <input id="f-company" name="company_role" type="text" autocomplete="organization" />
+            </div>
+            <div class="field">
+              <label for="f-message">Message <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="f-message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-ink">Send message</button>
+            <p class="form-note">
+              Sent via Formsubmit. Heads-up: the very first enquiry sends me a one-time Formsubmit email to confirm
+              this inbox — once I’ve clicked it, messages arrive straight away.
+            </p>
+          </form>
+
+          <aside class="contact-aside" aria-label="Other ways to reach me">
+            <p class="aside-label">Elsewhere</p>
+            <a class="linkedin-link" href="https://www.linkedin.com/in/desiree-grace-pradilla-b140b118b/" rel="noopener noreferrer" target="_blank">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H9z"/></svg>
+              Connect on LinkedIn
+            </a>
+            <p class="aside-label">Based in</p>
+            <p>Cebu, Philippines</p>
+            <p class="aside-label">Working with</p>
+            <p>Tourism &amp; leisure attractions, tours &amp; activities, outdoor &amp; lifestyle ecommerce</p>
+          </aside>
+        </div>
+      </div>
+
+      <svg class="hills" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path d="M0 140 C200 60 380 70 560 120 C720 160 860 80 1040 90 C1200 100 1320 140 1440 110 V220 H0 Z" fill="#B7D9A4"/>
+        <path d="M0 180 C180 130 360 140 520 170 C700 200 900 130 1100 150 C1260 165 1360 180 1440 165 V220 H0 Z" fill="#8FC57A"/>
+      </svg>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>© Des Pradilla. Personal portfolio — selected client work in leisure, attractions, and ecommerce.</p>
-      <p class="footer-note">Commercial figures sourced from 2025 client year-end reporting (ROLLER Funds Received vs platform-attributed metrics).</p>
+      <p>© Desiree (Des) Pradilla · Digital marketing for tourism &amp; leisure attractions · Cebu, Philippines</p>
+      <p class="footer-note">Commercial figures sourced from 2025 client year-end reporting (ticketing-system Funds Received vs platform-attributed metrics). Other cases as published on lab7digital.com.</p>
     </div>
   </footer>
+
+  <dialog class="case-dialog" id="case-dialog" aria-modal="true">
+    <div class="dialog-shell">
+      <div class="dialog-bar">
+        <span class="dialog-crumb" id="dialog-crumb">Case study</span>
+        <button type="button" class="dialog-close" data-close aria-label="Close case study">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="dialog-body" id="dialog-body" tabindex="-1"></div>
+      <div class="dialog-nav">
+        <button type="button" class="btn btn-soft" data-step="-1">← Previous</button>
+        <button type="button" class="btn btn-soft" data-step="1">Next →</button>
+      </div>
+    </div>
+  </dialog>
 
   <script src="js/main.js" defer></script>
 </body>
