@@ -1,0 +1,76 @@
+name: Publish GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable Pages from main /
+        id: enable
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo
+            const legacy = {
+              owner,
+              repo,
+              build_type: "legacy",
+              source: { branch: "main", path: "/" },
+            }
+            try {
+              const created = await github.request("POST /repos/{owner}/{repo}/pages", legacy)
+              core.info(`Created Pages site ${created.data.html_url} (${created.data.build_type})`)
+              core.setOutput("enabled", "legacy")
+              return
+            } catch (error) {
+              const status = error.status
+              const message = error.response?.data?.message || error.message
+              core.info(`POST /pages legacy failed: ${status} ${message}`)
+              if (status === 409) {
+                const current = await github.request("GET /repos/{owner}/{repo}/pages", { owner, repo })
+                core.info(`Pages already configured: ${JSON.stringify(current.data)}`)
+                core.setOutput("enabled", current.data.build_type || "existing")
+                if (current.data.build_type === "workflow") {
+                  core.setOutput("needs_deploy", "true")
+                }
+                return
+              }
+              core.setOutput("needs_deploy", "true")
+              core.warning(`Could not set the branch source (${status}): ${message}`)
+            }
+
+      - name: Configure GitHub Actions Pages
+        if: steps.enable.outputs.needs_deploy == 'true'
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload site
+        if: steps.enable.outputs.needs_deploy == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        if: steps.enable.outputs.needs_deploy == 'true'
+        uses: actions/deploy-pages@v4
